@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Garet';
+    src: local('MyFont'), url(./extras/fonts/Garet-Book.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Garet-Heavy';
+    src: local('MyFont'), url(./extras/fonts/Garet-Heavy.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('MyFont'), url(./extras/fonts/BebasNeue-Middle.otf) format('opentype');
+}
