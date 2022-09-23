@@ -3,7 +3,7 @@ import { Slide } from 'react-reveal'
 import { StyledAbout } from '../pages/styles/About.styled'
 
 import Photo from '../extras/images/Photo.PNG'
-import CV from '../extras/cv/CV.pdf'
+import CV from '../extras/cv/Nina-Tchanturia-CV.pdf'
 
 
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
                             To download my resume, click <a href={CV} download='Nina-Tchanturia-CV.pdf' className='download'>here</a>
                         </h3>
                     </div>
-                    <img src={Photo} alt='my photo'></img>
+                    <img src={Photo} alt='me'></img>
                 </Slide>
             </div>
             
