@@ -21,15 +21,51 @@ export const StyledProjects = styled.div`
             color: ${({ theme }) => theme.colors[1]};
             font-weight: 400;
             padding-bottom: 4rem;
-            grid-area: p;
             text-align: center;
+        }
 
+        a {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        a > img {
+            height: 10rem;
+            width: 16rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            background-color: red;
+            cursor: pointer;
+        }
+
+        a:hover > img {
+            filter: blur(3px);
         }
 
         .projects-header, .projects-body {
             display: flex;
             flex-direction: column;
             padding: 3rem;
+        }
+
+        .project-name {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #000;
+            cursor: pointer;
+        }
+
+        a:hover > .project-name {
+            display: flex;
+            height: 10rem;
+            width: 16rem;
+            align-items: center;
+            justify-content: center;
         }
 
         @media only screen and (max-width: 1015px) {

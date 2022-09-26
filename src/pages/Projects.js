@@ -1,6 +1,11 @@
 import React from 'react'
 import { Slide } from 'react-reveal'
+import Pulse from 'react-reveal/Pulse';
 import { StyledProjects } from '../pages/styles/Projects.styled'
+
+import GoogleKeepClone from '../extras/images/GoogleKeepClone.png'
+import ExpenseTracker from '../extras/images/ExpenseTracker.png'
+import SpeedTypingGame from '../extras/images/SpeedTypingGame.png'
 
 const Projects = () => {
   return (
@@ -13,9 +18,24 @@ const Projects = () => {
         </Slide>
       <div className='projects-body'>
         <Slide top cascade>
-          <img style={{ height: '10rem', width: '16rem', backgroundColor: 'red', margin: '1rem', borderRadius: '1rem' }}></img>
-          <img style={{ height: '10rem', width: '16rem', backgroundColor: 'red', margin: '1rem', borderRadius: '1rem' }}></img>
-          <img style={{ height: '10rem', width: '16rem', backgroundColor: 'red', margin: '1rem', borderRadius: '1rem' }}></img>
+          <a target='_blank' href='https://ninatch-google-keep-clone.netlify.app/'>
+            <img src={GoogleKeepClone}/>
+            <Pulse>
+              <p className='project-name'>Google Keep Clone</p>
+            </Pulse>
+          </a>
+          <a target='_blank' href='https://ninatch-expense-tracker.netlify.app/'>
+            <img src={ExpenseTracker}/>
+            <Pulse>
+              <p className='project-name'>Expense Tracker</p>
+            </Pulse>
+          </a>
+          <a target='_blank' href='https://ninatch-speed-typing-game.netlify.app/'>
+            <img src={SpeedTypingGame}/>
+            <Pulse>
+              <p className='project-name'>Speed-Typing Game</p>
+            </Pulse>
+          </a>
         </Slide>
       </div>
     </StyledProjects>
