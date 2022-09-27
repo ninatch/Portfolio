@@ -81,7 +81,6 @@ export const StyledSkills = styled.div`
             'p'
             'b-2';
         grid-template-columns: 1fr;
-        /* padding: 2rem; */
 
         h1 {
             font-size: 3rem;
