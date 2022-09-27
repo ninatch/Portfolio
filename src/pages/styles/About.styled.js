@@ -124,21 +124,15 @@ export const StyledAbout = styled.div`
         border-bottom: 3px ${({ theme }) => theme.colors[3]} solid;
     }
 
-    .introduction h1 {
-    }
-
     .work {
         flex-direction: column-reverse;
     }
     }
     
     @media only screen and (max-width: 800px) {
-        .introduction {
-            padding: 5rem 10rem;
-        }
 
         img {
-            width: 100%;
+            display: none;
         }
     }
 `

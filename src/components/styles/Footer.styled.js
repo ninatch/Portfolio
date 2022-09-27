@@ -24,7 +24,6 @@ export const StyledFooter = styled.div`
     }
 
     img {
-        width: 15%;
         cursor: pointer;
     }
 
@@ -44,6 +43,17 @@ export const StyledFooter = styled.div`
         width: 90%;
     }
 
-    @media only screen and (max-width: 1015px) {
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: min-content;
+
+        p {
+            padding: .5rem;
+        }
+
+        .img-arrow {
+            display: none;
+        }
     }
 `

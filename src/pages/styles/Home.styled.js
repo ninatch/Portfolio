@@ -51,11 +51,11 @@ export const StyledHome = styled.div`
 
     @media only screen and (max-width: 800px) {
         h1 {
-            right: 40%
+            right: 30%
         }
 
         h1::after {
-            right: 20%
+            left: 80%
         }
     }
 `
