@@ -15,6 +15,10 @@ export const StyledSkills = styled.div`
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         background-color: ${({ theme }) => theme.colors[0]};
         color: ${({ theme }) => theme.colors[1]};
         cursor: default;
@@ -72,22 +76,22 @@ export const StyledSkills = styled.div`
 
     @media only screen and (max-width: 1015px) {
         grid-template-areas: 
-        'h1'
-        'b-1'
-        'p'
-        'b-2';
+            'h1'
+            'b-1'
+            'p'
+            'b-2';
         grid-template-columns: 1fr;
-        padding: 2rem;
+        /* padding: 2rem; */
 
         h1 {
             font-size: 3rem;
         }
+
         p {
             border-right: none;
             border-bottom: 4px solid ${({ theme }) => theme.colors[1]};
             width: auto;
             height: 4px;
-            grid-area: p
         }
     }
 `
