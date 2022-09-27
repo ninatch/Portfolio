@@ -134,5 +134,10 @@ export const StyledAbout = styled.div`
         img {
             display: none;
         }
+
+        .introduction {
+            align-items: center;
+            padding: 5rem;
+        }
     }
 `
