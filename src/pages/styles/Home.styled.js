@@ -31,7 +31,7 @@ export const StyledHome = styled.div`
         width: 100rem;
         position: fixed;
         z-index: -1;
-        top: 55%;
+        top: 50%;
         left: 50%;
         overflow: hidden;
     }

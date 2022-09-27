@@ -43,7 +43,7 @@ export const StyledNavBar = styled.div`
     }
     
     .active {
-        border-bottom: 2px solid ${({ theme }) => theme.colors[4]};
+        border-bottom: 2px solid ${({ theme }) => theme.colors[1]};
     }
 
     @media only screen and (max-width: 800px) {
@@ -56,10 +56,10 @@ export const StyledNavBar = styled.div`
 
         ${({ click }) => click && css`
             width: 30%;
-            height: 100vh;
+            height: 100%;
             opacity: .9;
             transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2s;
-            background-color: green;
+            background-color: ${({ theme }) => theme.colors[1]};
         `}
     
         a {
@@ -69,9 +69,18 @@ export const StyledNavBar = styled.div`
             display: flex;
             margin: .5rem 1.5rem;
             padding: 0;
-            background-color: red;
+            color: ${({ theme }) => theme.colors[0]};
         `}
-    }
+        }
+
+        a::after {
+            background-color: ${({ theme }) => theme.colors[0]};
+        }
+
+        .active {
+            border-bottom: 2px solid ${({ theme }) => theme.colors[0]};
+        }
+
     }
     
 `
