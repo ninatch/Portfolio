@@ -56,7 +56,7 @@ export const StyledNavBar = styled.div`
 
         ${({ click }) => click && css`
             width: 30%;
-            height: 100%;
+            height: 1000%;
             opacity: .9;
             transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2s;
             background-color: ${({ theme }) => theme.colors[1]};
