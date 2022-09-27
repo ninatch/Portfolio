@@ -131,6 +131,13 @@ export const StyledAbout = styled.div`
     
     @media only screen and (max-width: 800px) {
 
+        h1 {
+            margin: 0;
+            padding: 0;
+            justify-self: center;
+            align-self: center;
+        }
+
         img {
             display: none;
         }

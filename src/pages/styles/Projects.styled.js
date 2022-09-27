@@ -79,6 +79,10 @@ export const StyledProjects = styled.div`
                 font-size: 3rem;
                 text-decoration: none;
                 border-bottom: 3px ${({ theme }) => theme.colors[3]} solid;
+                margin: 0;
+                padding: 0;
+                justify-self: center;
+                align-self: center;
             }
 
             p {
