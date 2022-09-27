@@ -5,7 +5,7 @@ export const StyledAbout = styled.div`
         color: ${({ theme }) => theme.colors[0]};
         display: grid;
         grid-template-rows: repeat(3, 100vh);
-        grid-template-columns: auto;
+        grid-template-columns: 100vw;
         
     .introduction, .education, .work {
         display: flex;
@@ -133,5 +133,12 @@ export const StyledAbout = styled.div`
     }
     
     @media only screen and (max-width: 800px) {
+        .introduction {
+            padding: 5rem 10rem;
+        }
+
+        img {
+            width: 100%;
+        }
     }
 `
