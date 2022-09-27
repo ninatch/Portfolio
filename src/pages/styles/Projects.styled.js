@@ -51,7 +51,7 @@ export const StyledProjects = styled.div`
         .project-name {
             display: none;
             position: absolute;
-            top: 20%;
+            top: 0;
             left: 0;
             font-size: 1.2rem;
             font-weight: 600;
@@ -64,8 +64,11 @@ export const StyledProjects = styled.div`
             display: flex;
             height: 10rem;
             width: 16rem;
+            margin: 1rem;
+            padding: 0;
             align-items: center;
             justify-content: center;
+            white-space: pre-line;
         }
 
         @media only screen and (max-width: 1015px) {

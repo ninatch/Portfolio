@@ -77,6 +77,7 @@ export const StyledContact = styled.div`
         font-size: .9rem;
         font-family: 'Garet';
         padding: .6rem;
+        border: none;
         border-bottom: 1px solid ${({ theme }) => theme.colors[2]};
         color: ${({ theme }) => theme.colors[2]};
         background: none;

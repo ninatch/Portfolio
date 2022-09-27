@@ -33,7 +33,10 @@ const Projects = () => {
           <a target='_blank' href='https://ninatch-speed-typing-game.netlify.app/'>
             <img src={SpeedTypingGame}/>
             <Pulse>
-              <p className='project-name'>Speed-Typing Game</p>
+              <p className='project-name'>
+                {`Speed-Typing Game 
+                (in progress)`}
+              </p>
             </Pulse>
           </a>
         </Slide>
