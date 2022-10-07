@@ -83,6 +83,7 @@ export const StyledSkills = styled.div`
             'b-2';
         grid-template-columns: 1fr;
         background-image: url(${VScodeSmall});
+        background-size: contain;
 
         h1 {
             font-size: 3rem;
