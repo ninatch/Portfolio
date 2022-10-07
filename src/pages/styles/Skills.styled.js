@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import VScode from '../../extras/images/VScode.png'
+import VScodeSmall from '../../extras/images/VScode-SmallScreen.png'
 
 export const StyledSkills = styled.div`
         min-height: 100vh;
@@ -81,6 +82,7 @@ export const StyledSkills = styled.div`
             'p'
             'b-2';
         grid-template-columns: 1fr;
+        background-image: url(${VScodeSmall});
 
         h1 {
             font-size: 3rem;
