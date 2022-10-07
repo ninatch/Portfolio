@@ -34,7 +34,6 @@ export const StyledProjects = styled.div`
             width: 16rem;
             margin: 1rem;
             border-radius: 1rem;
-            background-color: ${({ theme }) => theme.colors[1]};
             cursor: pointer;
         }
 

@@ -4,8 +4,9 @@ export const StyledAbout = styled.div`
         background-color: ${({ theme }) => theme.colors[2]};
         color: ${({ theme }) => theme.colors[0]};
         display: grid;
-        grid-template-rows: repeat(3, minmax(100vh, 150%));
+        grid-template-rows: repeat(3, minmax(100vh, max-content));
         grid-template-columns: 100vw;
+        padding: 2rem auto;
         
     .introduction, .education, .work {
         display: flex;
