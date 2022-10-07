@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import BlackBG from '../../extras/images/BlackBG.png'
 
 export const StyledHome = styled.div`
@@ -10,6 +10,7 @@ export const StyledHome = styled.div`
 
     h1 {
         position: fixed;
+        width: max-content;
         font-family: 'Bebas Neue';
         font-size: 8rem;
         font-weight: 100;
@@ -28,11 +29,12 @@ export const StyledHome = styled.div`
         content: '';
         background-color: red;
         height: 3px;
-        width: 100rem;
+        width: 50%;
+        padding: 0;
+        margin: 0;
         position: fixed;
         z-index: -1;
         top: 50%;
-        left: 50%;
         overflow: hidden;
     }
     
@@ -49,13 +51,53 @@ export const StyledHome = styled.div`
         z-index: -2;
     }
 
+    @keyframes slide_left {   
+        0% {
+            left: 100%;
+            opacity: 0.5;
+        }
+
+        100% {
+            left: 30%;
+            z-index: -1;
+            opacity: 1;
+        }
+    }
+
+        h1::after, .slide-left {
+            animation-name: slide_left;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-delay: 0;
+            animation-play-state: running;
+            animation-fill-mode: forwards;
+    }
+
+    @keyframes slide_left_pseudo {
+        0% {
+            left: 100%;
+        }
+
+        100% {
+            left: 60%;
+        }
+    }
+
+        h1::after {
+            animation-name: slide_left_pseudo;
+            animation-duration: 5s;
+        }
+
+
     @media only screen and (max-width: 800px) {
         h1 {
             right: 30%
         }
 
         h1::after {
-            left: 80%
+            left: 90%
         }
     }
 `
