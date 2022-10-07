@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledProjects = styled.div`
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,7 +34,7 @@ export const StyledProjects = styled.div`
             width: 16rem;
             margin: 1rem;
             border-radius: 1rem;
-            background-color: red;
+            background-color: ${({ theme }) => theme.colors[1]};
             cursor: pointer;
         }
 

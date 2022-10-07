@@ -4,7 +4,7 @@ export const StyledAbout = styled.div`
         background-color: ${({ theme }) => theme.colors[2]};
         color: ${({ theme }) => theme.colors[0]};
         display: grid;
-        grid-template-rows: repeat(3, 100vh);
+        grid-template-rows: repeat(3, minmax(100vh, max-content));
         grid-template-columns: 100vw;
         
     .introduction, .education, .work {

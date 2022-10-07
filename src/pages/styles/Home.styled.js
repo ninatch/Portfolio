@@ -4,7 +4,7 @@ import BlackBG from '../../extras/images/BlackBG.png'
 export const StyledHome = styled.div`
         position: relative;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         cursor: default;
         overflow: hidden;
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import VScode from '../../extras/images/VScode.png'
 
 export const StyledSkills = styled.div`
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
         padding: 1rem;
         display: grid;
