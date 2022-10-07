@@ -7,6 +7,7 @@ export const StyledAbout = styled.div`
         grid-template-rows: repeat(3, minmax(100vh, max-content));
         grid-template-columns: 100vw;
         padding: 2rem auto;
+        margin: 2rem auto;
         
     .introduction, .education, .work {
         display: flex;
