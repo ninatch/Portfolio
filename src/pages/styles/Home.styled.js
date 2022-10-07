@@ -64,40 +64,91 @@ export const StyledHome = styled.div`
         }
     }
 
-        h1::after, .slide-left {
-            animation-name: slide_left;
-            animation-duration: 3s;
-            animation-timing-function: ease;
-            animation-iteration-count: 1;
-            animation-direction: normal;
-            animation-delay: 0;
-            animation-play-state: running;
-            animation-fill-mode: forwards;
-    }
-
     @keyframes slide_left_pseudo {
         0% {
             left: 100%;
         }
 
         100% {
-            left: 60%;
+            left: 50%;
         }
     }
 
-        h1::after {
-            animation-name: slide_left_pseudo;
-            animation-duration: 5s;
+    @keyframes slide_left_mediumScr {   
+        0% {
+            left: 100%;
+            opacity: 0.5;
         }
 
+        100% {
+            left: 10%;
+            z-index: -1;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slide_left_pseudo_mediumScr {
+        0% {
+            left: 100%;
+        }
 
-    @media only screen and (max-width: 800px) {
-        h1 {
+        100% {
+            left: 50%;
+        }
+    }
+
+    @keyframes slide_left_pseudo_smallScr {
+        0% {
+            left: 100%;
+        }
+
+        100% {
+            left: 80%;
+        }
+    }
+
+    
+    h1::after, .slide-left {
+        animation-name: slide_left;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-delay: 0;
+        animation-play-state: running;
+        animation-fill-mode: forwards;
+    }
+
+
+    h1::after {
+        animation-name: slide_left_pseudo;
+        animation-duration: 5s;
+    }
+
+
+    @media only screen and (max-width: 850px) {
+
+        h1::after, .slide-left {
+            animation-name: slide_left_mediumScr;
+        }
+
+        h1::after {
+            animation-name: slide_left_pseudo_mediumScr;
+        }
+        
+        /* h1 {
             right: 30%
         }
 
         h1::after {
-            left: 90%
+            left: 80%
+        } */
+    }
+
+    @media only screen and (max-width: 410px) {
+
+        h1::after {
+            animation-name: slide_left_pseudo_smallScr;
         }
     }
 `
