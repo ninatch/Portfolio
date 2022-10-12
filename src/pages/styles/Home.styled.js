@@ -136,13 +136,6 @@ export const StyledHome = styled.div`
             animation-name: slide_left_pseudo_mediumScr;
         }
         
-        /* h1 {
-            right: 30%
-        }
-
-        h1::after {
-            left: 80%
-        } */
     }
 
     @media only screen and (max-width: 410px) {

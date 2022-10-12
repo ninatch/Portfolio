@@ -3,7 +3,7 @@ import { Slide } from 'react-reveal'
 import Pulse from 'react-reveal/Pulse';
 import { StyledProjects } from '../pages/styles/Projects.styled'
 
-import GoogleKeepClone from '../extras/images/GoogleKeepClone.png'
+import NotesApp from '../extras/images/NotesApp.png'
 import ExpenseTracker from '../extras/images/ExpenseTracker.png'
 import SpeedTypingGame from '../extras/images/SpeedTypingGame.png'
 
@@ -18,10 +18,10 @@ const Projects = () => {
         </Slide>
       <div className='projects-body'>
         <Slide top cascade>
-          <a target='_blank' href='https://ninatch-google-keep-clone.netlify.app/'>
-            <img src={GoogleKeepClone}/>
+          <a target='_blank' href='https://ninatch-notes-app.netlify.app/'>
+            <img src={NotesApp}/>
             <Pulse>
-              <p className='project-name'>Google Keep Clone</p>
+              <p className='project-name'>Notes App</p>
             </Pulse>
           </a>
           <a target='_blank' href='https://ninatch-expense-tracker.netlify.app/'>
